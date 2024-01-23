@@ -1,0 +1,79 @@
+.about-me {
+  color: #000; /* Text color */
+  /* background-color: rgb(113, 43, 174); Main background color */
+  padding: 20px; /* Add some padding for spacing */
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.stickman{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrongHire{
+  margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    align-self: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+  
+}
+.about-me h1 {
+  font-size: 36px;
+}
+
+.about-me h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.about-me p {
+  font-size: 18px;
+}
+.personal-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.personal-info ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 20px;
+  justify-items: self-start;
+}
+
+.personal-info li {
+  margin: 0;
+  padding: 0;
+}
+
+.personal-info h2 {
+  font-size: 24px;
+}
+
+.personal-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.personal-info li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Add more styles and adjust sizes as needed */
+.personalInfo{
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .personal-info ul {
+    grid-template-columns: 1fr; /* Single column for mobile screens */
+  }
+}

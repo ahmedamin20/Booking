@@ -38,16 +38,16 @@ export default function NavBar() {
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Product
+          Rest
         </a>
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Features
+          About
         </a>
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Marketplace
+          Contact Us
         </a>
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Company
+          Our Company
         </a>
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
