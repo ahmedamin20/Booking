@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from './_compnent/NavBar/NavBar';
 import Footer from "./_compnent/Footer/Footer";
 import Header from './_compnent/Header/Header';
+import Card from './_compnent/Card/Card';
 
 const inter = Inter({ subsets: ["latin"] });
 
