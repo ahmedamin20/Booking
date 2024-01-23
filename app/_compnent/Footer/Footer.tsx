@@ -1,7 +1,7 @@
 
 
 export default function Footer() {
-    const loop= [
+    const loop = [
         {
             title: 'Company',
             links: [
@@ -61,32 +61,34 @@ export default function Footer() {
                 },
             ]
         },
-        {
-            title: 'Download',
-            links: [
-                {
-                    name: 'iOS',
-                    href: '#'
-                },
-                {
-                    name: 'Android',
-                    href: '#'
-                },
-                {
-                    name: 'Windows',
-                    href: '#'
-                },
-                {
-                    name: 'MacOS',
-                    href: '#'
-                },
-            ]
-        },
+
     ]
     return (
 
 
         <footer className="bg-white dark:bg-gray-900">
+            <div className='flex justify-center'>
+
+                {loop.map((item, index) => (
+
+                    <div className="mx-auto w-full max-w-screen-xl px-4 py-6 lg:py-8 md:px-8" key={index}>
+                        <div className="grid grid-cols-3 gap-4 md:grid-cols-4">
+                            <div>
+                                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{item.title}</h2>
+                                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                                    {item.links.map((link, index) => (
+                                        <li className="mb-4" key={index}>
+                                            <a href={link.href} className="hover:underline">{link.name}</a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                )
+                )}
+            </div>
+
             <div className="mx-auto w-full max-w-screen-xl">
                 <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
                     <div>
@@ -137,23 +139,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
-                        <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                            <li className="mb-4">
-                                <a href="#" className="hover:underline">iOS</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="#" className="hover:underline">Android</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="#" className="hover:underline">Windows</a>
-                            </li>
-                            <li className="mb-4">
-                                <a href="#" className="hover:underline">MacOS</a>
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
                 <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
                     <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved.
