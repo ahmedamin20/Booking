@@ -1,0 +1,143 @@
+.card {
+  width: 600px;
+  /* Reduce the width */
+  padding: 20px;
+  /* Reduce padding */
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  /* Reduce border size */
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  /* Reduce box shadow */
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+.card h2 {
+  color: var(--main-color);
+  font-size: 24px;
+  /* Reduce font size */
+  text-transform: uppercase;
+}
+
+.submit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid: auto / auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  /* Reduce column size */
+  grid-gap: 20px;
+  /* Reduce grid gap */
+}
+
+.card .row .col {
+  position: relative;
+  width: 100%;
+  margin: 10px 10px 20px 0;
+  /* Reduce margin */
+  transition: 0.5s;
+}
+
+.card .row .form-group {
+  width: 100%;
+  height: 30px;
+}
+
+.card .row .form-group label {
+  line-height: 25px;
+  color: var(--side-font);
+  font-size: 18px;
+  margin: 0 0 0 20px;
+  /* Adjust margin */
+  display: block;
+}
+
+.message {
+  display: block;
+}
+
+.card .row .form-group input:focus,
+.card .row .form-group textarea:focus {
+  border: 4px solid var(--main-color);
+  /* Reduce border size */
+  transition: all 0.8s ease-in-out;
+}
+
+.card .row input[type="submit"] {
+  border: 0px solid rgba(0, 0, 0, 0.3);
+  /* Reduce border size */
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);
+  /* Reduce box shadow */
+  padding: 8px;
+  /* Reduce padding */
+  height: 100%;
+  margin-top: 20px;
+  width: max-content;
+  /* Reduce width */
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  color: var(--main-color);
+  line-height: 30px;
+  /* Reduce line-height */
+  font-size: 18px;
+  /* Reduce font size */
+  font-weight: 700;
+  border-radius: 25px;
+  /* Reduce border radius */
+  transition: all 0.4s;
+}
+
+.card .row input[type="submit"]:hover {
+  border: 4px solid var(--main-color);
+  box-shadow: 8px 8px 0 rgba(var(--main-color), 0.5);
+  /* Reduced opacity here */
+
+  color: #ffffff;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  .card .row {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    /* Adjust column size */
+  }
+
+  .card {
+    padding: 10px;
+    /* Reduce padding */
+  }
+
+  .card h2 {
+    font-size: 26px;
+    /* Reduce font size */
+  }
+
+  .card .row input[type="submit"] {
+    width: 100%;
+    
+
+  }
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 0px 5px 10px;
+  /* border: 0px solid rgba(0, 0, 0, 0.3); */
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 0px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
