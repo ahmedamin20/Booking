@@ -1,18 +1,43 @@
+"use client";
+import defaultAPI from "@/app/axiosIstance";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
+import Cookies from "js-cookie";
+import { ACCESS_TOKEN } from "@/app/constants/Constants";
+import { redirect, useRouter } from "next/navigation";
 
 const Login = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const router = useRouter();
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    // Check if formRef.current is not null before using it
+    if (formRef.current) {
+      const formData = new FormData(formRef.current);
+
+      try {
+        // Await the API call to complete
+        const res = await defaultAPI.post("auth/login/dashboard", formData);
+        Cookies.set(ACCESS_TOKEN, res.data.data.token);
+
+        // Redirect after successful login
+        router.push("/");
+      } catch (error) {
+        // Handle errors here, e.g., show an error message to the user
+        console.error("Login failed:", error);
+      }
+    }
+  };
   return (
-    <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <section className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm ">
-        {/* <img className="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company"> */}
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
           Sign in to your account
         </h2>
       </div>
-
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form className="space-y-6" action="#" method="POST">
+      <form ref={formRef} onSubmit={handleSubmit}>
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <div>
             <label
               htmlFor="email"
@@ -40,14 +65,6 @@ const Login = () => {
               >
                 Password
               </label>
-              <div className="text-sm">
-                <a
-                  href="#"
-                  className="font-semibold text-indigo-600 hover:text-indigo-500"
-                >
-                  Forgot password?
-                </a>
-              </div>
             </div>
             <div className="mt-2">
               <input
@@ -64,23 +81,21 @@ const Login = () => {
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="flex w-full my-4 mx-auto justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Sign in
             </button>
           </div>
-        </form>
+        </div>
+      </form>
 
-        <Link
-          href="signup"
-          className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-        >
-          <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?
-          </p>
-        </Link>
-      </div>
-    </div>
+      <Link
+        href="signup"
+        className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+      >
+        <p className="mt-10 text-center text-sm text-gray-500">Not a member?</p>
+      </Link>
+    </section>
   );
 };
 

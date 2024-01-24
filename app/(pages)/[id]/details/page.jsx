@@ -1,8 +1,25 @@
-interface props {
-  title: string;
-  price: number;
-}
-const RestDetails = ({ title, price }: props) => {
+"use client";
+
+import defaultAPI from "@/app/axiosIstance";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+
+const RestDetails = ({ title, price }) => {
+  const { id } = useParams();
+  const [data, setData] = useState([]);
+  const URL = "api/rests";
+  useEffect(() => {
+    const fetchData = async () => {
+      defaultAPI.get(URL).then((res) => {
+        setData(res.data.data);
+      });
+      // return x;
+    };
+    fetchData();
+  }, []);
+  const item = data?.find((item) => item.id == id);
+  console.log(item, "item");
+  console.log(id, "id");
   return (
     <section className="py-10 font-poppins ">
       <div className="max-w-6xl px-4 mx-auto">
@@ -30,7 +47,7 @@ const RestDetails = ({ title, price }: props) => {
                 </a>
                 <img
                   className="object-contain w-full lg:h-full"
-                  src="https://i.postimg.cc/0jwyVgqz/Microprocessor1-removebg-preview.png"
+                  src={item?.images[0]}
                   alt=""
                 />
                 <a
@@ -60,7 +77,7 @@ const RestDetails = ({ title, price }: props) => {
                   >
                     <img
                       className="object-contain w-full lg:h-28"
-                      src="https://i.postimg.cc/Z5KhRkD6/download-1-removebg-preview.png"
+                      src={item?.images[1]}
                       alt=""
                     />
                   </a>
@@ -72,7 +89,7 @@ const RestDetails = ({ title, price }: props) => {
                   >
                     <img
                       className="object-contain w-full lg:h-28"
-                      src="https://i.postimg.cc/8kJBrw03/download-removebg-preview.png"
+                      src={item?.images[2]}
                       alt=""
                     />
                   </a>
@@ -84,19 +101,7 @@ const RestDetails = ({ title, price }: props) => {
                   >
                     <img
                       className="object-contain w-full lg:h-28"
-                      src="https://i.postimg.cc/0jwyVgqz/Microprocessor1-removebg-preview.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="w-1/2 p-2 sm:w-1/4">
-                  <a
-                    className="block border border-gray-200 hover:border-blue-400 dark:border-gray-700 dark:hover:border-blue-300"
-                    href="#"
-                  >
-                    <img
-                      className="object-contain w-full lg:h-28"
-                      src="https://i.postimg.cc/0N4Kk1PN/black-microprocessors-removebg-preview.png"
+                      src={item?.images[0]}
                       alt=""
                     />
                   </a>
@@ -108,11 +113,15 @@ const RestDetails = ({ title, price }: props) => {
             <div className="lg:pl-20">
               <div className="mb-6 ">
                 <h2 className="max-w-xl mt-6 mb-6 text-xl font-semibold leading-loose tracking-wide text-gray-900 md:text-2xl dark:text-gray-900">
-                  {title}
+                  <span style={{ fontWeight: "bold", fontsize: "30px" }}>
+                    {item?.name}
+                  </span>
+                  <hr />
+                  {item?.description}
                 </h2>
                 <div className="flex flex-wrap items-center mb-6"></div>
                 <p className="inline-block text-2xl font-semibold text-gray-700 dark:text-gray-400 ">
-                  <span>{price}$</span>
+                  <span>{item?.price}$</span>
                 </p>
               </div>
 
