@@ -1,12 +1,18 @@
-import Image from "next/image";
+"use client";
 import Header from "./_compnent/Header/Header";
-import Ads from "./_compnent/Ads/Ads";
+import Auth from "./middlewares/useAuth";
 
-export default function Home() {
+const Home = () => {
+
+
   return (
     <>
       <Header />
-      <Ads />
+
     </>
   );
 }
+
+export default Auth(Home)
+
+
