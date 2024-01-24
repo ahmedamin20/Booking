@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function NavBar() {
   return (
     <nav
@@ -41,11 +42,15 @@ export default function NavBar() {
           Rest
         </a>
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+        Contact Us
+        </a>
+        <Link
+          href="/about"
+          className="text-sm font-semibold leading-6 text-gray-900"
+        >
           About
-        </a>
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Contact Us
-        </a>
+        
+        </Link>
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
           Our Company
         </a>
