@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/_compnent/Card/Card.jsx", "app/_compnent/rests/page.jsx", "app/(pages)/[id]/details/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/_compnent/Card/Card.jsx", "app/_compnent/rests/page.jsx", "app/(pages)/[id]/details/page.jsx", "app/(pages)/auth/signup/page.jsx"],
   "exclude": ["node_modules"]
 }

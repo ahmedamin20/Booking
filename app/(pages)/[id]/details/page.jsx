@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const RestDetails = () => {
   const { id } = useParams();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [data, setData] = useState([]);
   const URL = "api/rests";
   useEffect(() => {
@@ -19,6 +20,21 @@ const RestDetails = () => {
     fetchData();
   }, []);
   const item = data?.find((item) => item.id == id);
+
+  const handlePrevImage = () => {
+    setCurrentImageIndex(
+      currentImageIndex < item?.images?.length
+        ? currentImageIndex - 1
+        : currentImageIndex
+    );
+  };
+  const handleNextImage = () => {
+    setCurrentImageIndex(
+      currentImageIndex < item?.images?.length
+        ? currentImageIndex + 1
+        : currentImageIndex
+    );
+  };
   return (
     <section className="py-10 font-poppins ">
       <div className="max-w-6xl px-4 mx-auto">
@@ -28,7 +44,8 @@ const RestDetails = () => {
               <div className="relative mb-6 lg:mb-10 lg:h-96">
                 <a
                   className="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2"
-                  href="#"
+                  // href="#"
+                  onClick={handlePrevImage}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -46,12 +63,13 @@ const RestDetails = () => {
                 </a>
                 <img
                   className="object-contain w-full lg:h-full"
-                  src={item?.images[0]}
+                  src={item?.images[currentImageIndex]}
                   alt=""
                 />
                 <a
                   className="absolute right-0 transform lg:mr-2 top-1/2 translate-1/2"
-                  href="#"
+                  // href="#"
+                  onClick={handleNextImage}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
