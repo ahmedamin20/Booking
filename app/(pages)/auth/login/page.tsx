@@ -4,11 +4,9 @@ import Link from "next/link";
 import React, { useRef } from "react";
 import Cookies from "js-cookie";
 import { ACCESS_TOKEN } from "@/app/constants/Constants";
-import { redirect, useRouter } from "next/navigation";
 
 const Login = () => {
   const formRef = useRef<HTMLFormElement>(null);
-  const router = useRouter();
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -22,7 +20,8 @@ const Login = () => {
         Cookies.set(ACCESS_TOKEN, res.data.data.token);
 
         // Redirect after successful login
-        router.push("/");
+        // router.replace("/home");
+        window.location.replace("/home");
       } catch (error) {
         // Handle errors here, e.g., show an error message to the user
         console.error("Login failed:", error);
@@ -50,6 +49,7 @@ const Login = () => {
                 id="email"
                 name="email"
                 type="email"
+                value="client@admin.com"
                 autoComplete="email"
                 required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -71,6 +71,7 @@ const Login = () => {
                 id="password"
                 name="password"
                 type="password"
+                value="client"
                 autoComplete="current-password"
                 required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"

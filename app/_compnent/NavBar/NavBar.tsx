@@ -38,27 +38,19 @@ export default function NavBar() {
         </button>
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Rest
-        </a>
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-        Contact Us
-        </a>
         <Link
-          href="/about"
+          href="/home"
           className="text-sm font-semibold leading-6 text-gray-900"
         >
-          About
-        
+          Rest
         </Link>
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Our Company
-        </a>
-      </div>
-      <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-          Log in <span aria-hidden="true">&rarr;</span>
-        </a>
+
+        <Link
+          href="/orders/details"
+          className="text-sm font-semibold leading-6 text-gray-900"
+        >
+          Orders
+        </Link>
       </div>
     </nav>
   );

@@ -3,6 +3,7 @@
 import defaultAPI from "@/app/axiosIstance";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const RestDetails = ({ title, price }) => {
   const { id } = useParams();
@@ -18,8 +19,6 @@ const RestDetails = ({ title, price }) => {
     fetchData();
   }, []);
   const item = data?.find((item) => item.id == id);
-  console.log(item, "item");
-  console.log(id, "id");
   return (
     <section className="py-10 font-poppins ">
       <div className="max-w-6xl px-4 mx-auto">
@@ -126,12 +125,13 @@ const RestDetails = ({ title, price }) => {
               </div>
 
               <div className="flex gap-4 mb-6">
-                <a
-                  href="#"
+                <Link
+                  // href={"/"}
+                  href={`order`}
                   className="w-full px-4 py-3 text-center text-gray-100 bg-blue-600 border border-transparent dark:border-gray-700 hover:border-blue-500 hover:text-blue-700 hover:bg-blue-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-900 rounded-xl"
                 >
                   Buy now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
