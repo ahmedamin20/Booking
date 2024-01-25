@@ -1,9 +1,9 @@
 "use client";
 import defaultAPI from "@/app/axiosIstance";
-import Link from "next/link";
 import React, { useRef } from "react";
 import Cookies from "js-cookie";
 import { ACCESS_TOKEN } from "@/app/constants/Constants";
+import Link from "next/link";
 
 const Login = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -90,12 +90,13 @@ const Login = () => {
         </div>
       </form>
 
-      <Link
-        href="signup"
+      <button
+        // href="signup"
+        onClick={() => window.location.replace("signup")}
         className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
       >
         <p className="mt-10 text-center text-sm text-gray-500">Not a member?</p>
-      </Link>
+      </button>
     </section>
   );
 };

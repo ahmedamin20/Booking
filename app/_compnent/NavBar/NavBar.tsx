@@ -1,4 +1,8 @@
+"use client";
+import defaultAPI from "@/app/axiosIstance";
+import { ACCESS_TOKEN } from "@/app/constants/Constants";
 import Link from "next/link";
+import Cookies from "js-cookie";
 export default function NavBar() {
   return (
     <nav
@@ -51,6 +55,17 @@ export default function NavBar() {
         >
           Orders
         </Link>
+        <button
+          onClick={() => {
+            defaultAPI.post("auth/logout").then(() => {
+              Cookies.remove(ACCESS_TOKEN);
+              window.location.href = "/auth/login";
+            });
+          }}
+          className="text-sm font-semibold leading-6 text-gray-900"
+        >
+          logout
+        </button>
       </div>
     </nav>
   );
