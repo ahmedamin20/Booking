@@ -27,7 +27,7 @@ const Rests = () => {
           flexWrap: "wrap",
         }}
       >
-        <h1 className="font-bold text-4xl text-slate-800 my-10">Rests</h1>
+        <h1 className="font-bold text-4xl text-slate-800 my-10">الاستراحات</h1>
       </div>
       <div
         style={{

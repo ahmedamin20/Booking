@@ -1,65 +1,66 @@
 const Footer = () => {
   const loop = [
     {
-      title: "Company",
+      title: "الشركة",
       links: [
         {
-          name: "About",
+          name: "حول",
           href: "#",
         },
         {
-          name: "Careers",
+          name: "وظائف",
           href: "#",
         },
         {
-          name: "Brand Center",
+          name: "مركز العلامة التجارية",
           href: "#",
         },
         {
-          name: "Blog",
+          name: "المدونة",
           href: "#",
         },
       ],
     },
     {
-      title: "Help center",
+      title: "مركز المساعدة",
       links: [
         {
-          name: "Discord Server",
+          name: "خادم Discord",
           href: "#",
         },
         {
-          name: "Twitter",
+          name: "تويتر",
           href: "#",
         },
         {
-          name: "Facebook",
+          name: "فيسبوك",
           href: "#",
         },
         {
-          name: "Contact Us",
+          name: "اتصل بنا",
           href: "#",
         },
       ],
     },
     {
-      title: "Legal",
+      title: "قانوني",
       links: [
         {
-          name: "Privacy Policy",
+          name: "سياسة الخصوصية",
           href: "#",
         },
         {
-          name: "Licensing",
+          name: "التراخيص",
           href: "#",
         },
         {
-          name: "Terms & Conditions",
+          name: "الشروط والأحكام",
           href: "#",
         },
       ],
     },
   ];
+
   return (
     <footer className="bg-white dark:bg-gray-900">
       <section className="flex justify-center">
@@ -90,10 +91,18 @@ const Footer = () => {
 
       <div className="mx-auto w-full bg-gray-100 max-w-screen-xl">
         <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-            © 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
-            Reserved.
-          </span>
+          <a href="https://portfolio-psi-pied-15.vercel.app/" target="_blank">
+            <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+              © 2024{" "}
+              <a
+                href="https://portfolio-psi-pied-15.vercel.app/"
+                target="_blank"
+              >
+                click me
+              </a>
+              . All Rights Reserved.
+            </span>
+          </a>
           <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
             <a
               href="#"

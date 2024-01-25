@@ -31,7 +31,7 @@ const Payment = () => {
               Secure payment info
             </h1>
           </div>
-          <form onSbmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div className="mb-3 flex -mx-2">
               <div className="px-2">
                 <label
@@ -43,6 +43,7 @@ const Payment = () => {
                     className="form-radio h-5 w-5 text-indigo-500"
                     name="type"
                     id="type1"
+                    // required
                     checked
                   />
                   <img
@@ -80,6 +81,7 @@ const Payment = () => {
                   className="w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-indigo-500 transition-colors"
                   placeholder="Name"
                   type="text"
+                  required
                 />
               </div>
             </div>
@@ -110,8 +112,8 @@ const Payment = () => {
             </div>
             <div>
               <button
-                type="button"
-                onClick={handleSubmit}
+                type="submit"
+                // onClick={handleSubmit}
                 className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
               >
                 <i className="mdi mdi-lock-outline mr-1"></i> PAY NOW
