@@ -28,7 +28,7 @@ const Payment = () => {
           </div>
           <div className="mb-10">
             <h1 className="text-center font-bold text-xl uppercase">
-              Secure payment info
+              طريقة الدفع{" "}
             </h1>
           </div>
           <form onSubmit={handleSubmit}>
