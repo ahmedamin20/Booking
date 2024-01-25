@@ -6,7 +6,7 @@ const OurTeam = () => {
 
         <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
           <div className="mb-6 lg:mb-0">
-            <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div className="block rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <img
                   src="https://cdn4.iconfinder.com/data/icons/nationalities-new-collection/383/arabic-256.png"
@@ -16,7 +16,7 @@ const OurTeam = () => {
                   <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"></div>
                 </a>
                 <svg
-                  className="absolute text-white dark:text-neutral-700 left-0 bottom-0"
+                  className="absolute text-neutral-700 left-0 bottom-0"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1440 320"
                 >
@@ -30,16 +30,14 @@ const OurTeam = () => {
                 <h5 className="mb-4 text-lg font-bold text-white">
                   عبدالله احمد القرني
                 </h5>
-                <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                  443110151
-                </p>
+                <p className="mb-4 text-neutral-300">443110151</p>
                 <ul className="mx-auto flex list-inside justify-center">
                   <a href="#!" className="px-2">
                     {/* <!-- GitHub --> */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className="h-4 w-4 text-primary dark:text-primary-400"
+                      className="h-4 w-4 text-primary-400"
                     >
                       <path
                         fill="currentColor"
@@ -52,7 +50,7 @@ const OurTeam = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className="h-4 w-4 text-primary dark:text-primary-400"
+                      className="h-4 w-4 text-primary-400"
                     >
                       <path
                         fill="currentColor"
@@ -65,7 +63,7 @@ const OurTeam = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                      className="h-3.5 w-3.5 text-primary-400"
                     >
                       <path
                         fill="currentColor"
@@ -79,7 +77,7 @@ const OurTeam = () => {
           </div>
 
           <div className="mb-6 lg:mb-0">
-            <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div className="block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <img
                   src="https://cdn4.iconfinder.com/data/icons/nationalities-new-collection/383/arabic-256.png"
@@ -89,7 +87,7 @@ const OurTeam = () => {
                   <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"></div>
                 </a>
                 <svg
-                  className="absolute text-white dark:text-neutral-700  left-0 bottom-0"
+                  className="absolute text-neutral-700  left-0 bottom-0"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1440 320"
                 >
@@ -103,15 +101,13 @@ const OurTeam = () => {
                 <h5 className="mb-4 text-lg font-bold text-white">
                   عبدالرحمن سعيد القرني
                 </h5>
-                <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                  443108956
-                </p>
+                <p className="mb-4 text-neutral-300">443108956</p>
                 <ul className="mx-auto flex list-inside justify-center">
                   <a href="#!" className="px-2">
                     {/* <!-- Facebook --> */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4 text-primary dark:text-primary-400"
+                      className="h-4 w-4 text-primary-400"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -123,7 +119,7 @@ const OurTeam = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className="h-4 w-4 text-primary dark:text-primary-400"
+                      className="h-4 w-4 text-primary-400"
                     >
                       <path
                         fill="currentColor"
@@ -136,7 +132,7 @@ const OurTeam = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                      className="h-3.5 w-3.5 text-primary-400"
                     >
                       <path
                         fill="currentColor"
@@ -150,7 +146,7 @@ const OurTeam = () => {
           </div>
 
           <div className="">
-            <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div className="block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <img
                   src="https://cdn4.iconfinder.com/data/icons/nationalities-new-collection/383/arabic-256.png"
@@ -160,7 +156,7 @@ const OurTeam = () => {
                   <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"></div>
                 </a>
                 <svg
-                  className="absolute text-white dark:text-neutral-700 left-0 bottom-0"
+                  className="absolute text-neutral-700 left-0 bottom-0"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1440 320"
                 >
@@ -174,16 +170,14 @@ const OurTeam = () => {
                 <h5 className="mb-4 text-lg font-bold text-white">
                   فيصل عبدالرحمن القرني
                 </h5>
-                <p className="mb-4 text-neutral-500 dark:text-neutral-300">
-                  443143551
-                </p>
+                <p className="mb-4 text-neutral-300">443143551</p>
                 <ul className="mx-auto flex list-inside justify-center">
                   <a href="#!" className="px-2">
                     {/* <!-- Dribbble --> */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className="h-4 w-4 text-primary dark:text-primary-400"
+                      className="h-4 w-4 text-primary-400"
                     >
                       <path
                         fill="currentColor"
@@ -196,7 +190,7 @@ const OurTeam = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className="h-3.5 w-3.5 text-primary dark:text-primary-400"
+                      className="h-3.5 w-3.5 text-primary-400"
                     >
                       <path
                         fill="currentColor"
@@ -209,7 +203,7 @@ const OurTeam = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      className="h-4 w-4 text-primary dark:text-primary-400"
+                      className="h-4 w-4 text-primary-400"
                     >
                       <path
                         fill="currentColor"

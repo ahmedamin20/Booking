@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div class="grid sm:grid-cols-2 items-center gap-16 my-6 mx-auto max-w-4xl bg-white text-[#333] font-[sans-serif]">
+    <div class="grid p-5 sm:grid-cols-2 items-center gap-16 my-6 mx-auto max-w-4xl bg-white text-[#333] font-[sans-serif]">
       <div>
         <h1 class="text-3xl font-extrabold">تواصل معنا</h1>
         <div class="mt-12">
