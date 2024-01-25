@@ -5,7 +5,6 @@ import NavBar from "./_compnent/NavBar/NavBar";
 import Footer from "./_compnent/Footer/Footer";
 import Card from "./_compnent/Card/Card";
 import { Toaster } from "react-hot-toast";
-import { disableInspect } from "./disableInspect";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +24,7 @@ export default function RootLayout({
         {/* <div className="m-5"></div> */}
         <Toaster />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

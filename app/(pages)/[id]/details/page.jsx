@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const RestDetails = ({ title, price }) => {
+const RestDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);
   const URL = "api/rests";
