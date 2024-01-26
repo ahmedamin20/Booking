@@ -1,14 +1,3 @@
-import style from "./page.module.css";
-
-import PersonalInfo from "./PersonalInfo";
-// import image1 from "./image1.jpg";
-// import image2 from "./image2.jpg";
-import Image from "next/image";
-export const metadata = {
-  title: "About",
-  Technology: "some information about me",
-};
-
 export default function About() {
   return (
     <section class="flex items-center flex-col bg-stone-100  font-poppins dark:bg-gray-800 ">

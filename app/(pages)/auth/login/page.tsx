@@ -21,7 +21,7 @@ const Login = () => {
 
         // Redirect after successful login
         // router.replace("/home");
-        window.location.replace("/home");
+        window.location.replace("/");
       } catch (error) {
         // Handle errors here, e.g., show an error message to the user
         console.error("Login failed:", error);

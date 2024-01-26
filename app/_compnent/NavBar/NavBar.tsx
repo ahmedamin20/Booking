@@ -64,13 +64,13 @@ export default function NavBar() {
           الطلبات
         </Link>
         <Link
-          href="contact"
+          href="/contact"
           className="text-sm font-semibold leading-6 text-gray-900"
         >
           تواصل معنا
         </Link>
         <Link
-          href="ourteam"
+          href="/ourteam"
           className="text-sm font-semibold leading-6 text-gray-900"
         >
           فريقنا
