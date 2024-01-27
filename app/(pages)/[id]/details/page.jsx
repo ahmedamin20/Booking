@@ -22,19 +22,21 @@ const RestDetails = () => {
   const item = data?.find((item) => item.id == id);
 
   const handlePrevImage = () => {
+    console.log("prev");
+
     setCurrentImageIndex(
-      currentImageIndex < item?.images?.length
-        ? currentImageIndex - 1
-        : currentImageIndex
+      currentImageIndex > 0 ? currentImageIndex - 1 : currentImageIndex
     );
   };
   const handleNextImage = () => {
+    console.log("next");
     setCurrentImageIndex(
-      currentImageIndex < item?.images?.length
+      currentImageIndex < item?.images?.length - 1
         ? currentImageIndex + 1
         : currentImageIndex
     );
   };
+  console.log(currentImageIndex, "currentImageIndex");
   return (
     <section className="py-10 font-poppins ">
       <div className="max-w-6xl px-4 mx-auto">
@@ -43,7 +45,7 @@ const RestDetails = () => {
             <div className="sticky top-0 overflow-hidden ">
               <div className="relative mb-6 lg:mb-10 lg:h-96">
                 <a
-                  className="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2"
+                  className="absolute left-0 transform lg:mr-8 top-1/2 translate-1/2"
                   // href="#"
                   onClick={handlePrevImage}
                 >
@@ -52,7 +54,7 @@ const RestDetails = () => {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    className="w-5 h-5 text-blue-900 bi bi-chevron-left dark:text-blue-200"
+                    className="w-5 h-5 text-blue-900 bi bi-chevron-left "
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -67,7 +69,7 @@ const RestDetails = () => {
                   alt=""
                 />
                 <a
-                  className="absolute right-0 transform lg:mr-2 top-1/2 translate-1/2"
+                  className="absolute right-0 transform lg:ml-8 top-1/2 translate-1/2"
                   // href="#"
                   onClick={handleNextImage}
                 >
@@ -76,7 +78,7 @@ const RestDetails = () => {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    className="w-5 h-5 text-blue-500 bi bi-chevron-right dark:text-blue-200"
+                    className="w-5 h-5 text-blue-500 ml-4 bi bi-chevron-right "
                     viewBox="0 0 16 16"
                   >
                     <path

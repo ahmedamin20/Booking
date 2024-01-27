@@ -1,17 +1,24 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import "./form.css";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import defaultAPI from "./../../../axiosIstance";
 import { toast } from "react-hot-toast";
 
 const Payment = () => {
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const url = `api/rests/${id}/order`;
   const handleSubmit = (e) => {
     e.preventDefault();
+    setTimeout(() => {
+      setLoading(true);
+    }, [2000]);
     defaultAPI.post(url).then((res) => {
       toast.success(res.data.message);
+      setLoading(false);
+      router.push("/home");
     });
   };
   return (
@@ -113,10 +120,11 @@ const Payment = () => {
             <div>
               <button
                 type="submit"
-                // onClick={handleSubmit}
+                disabled={loading}
                 className="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"
               >
-                <i className="mdi mdi-lock-outline mr-1"></i> ادفع
+                <i className="mdi mdi-lock-outline mr-1"></i>
+                {loading ? "انتظر" : "ادفع"}
               </button>
             </div>
           </form>

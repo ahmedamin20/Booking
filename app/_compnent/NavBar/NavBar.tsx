@@ -4,10 +4,20 @@ import { ACCESS_TOKEN } from "@/app/constants/Constants";
 import Link from "next/link";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 // import { useRouter } from "next/navigation";
 
 export default function NavBar() {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
+  const handleLogout = () => {
+    setLoading(true);
+    defaultAPI.post("auth/logout").then(() => {
+      Cookies.remove(ACCESS_TOKEN);
+      router.push("/auth/login");
+      setLoading(false);
+    });
+  };
   return (
     <nav
       className="flex items-center bg-white justify-between p-6 lg:px-8"
@@ -86,16 +96,12 @@ export default function NavBar() {
           فريقنا
         </Link>
         <button
-          onClick={() => {
-            defaultAPI.post("auth/logout").then(() => {
-              Cookies.remove(ACCESS_TOKEN);
-              router.push("/auth/login");
-            });
-          }}
+          onClick={handleLogout}
+          disabled={loading}
           style={{ borderRadius: ".5rem" }}
-          className="text-sm p-2 bg-blue-600 font-semibold leading-6 text-white"
+          className="text-sm p-2 bg-blue-500 font-semibold leading-6 text-white"
         >
-          تسجيل خروج
+        {loading?".....انتظر":"تسجيل خروج" }
         </button>
       </div>
     </nav>
