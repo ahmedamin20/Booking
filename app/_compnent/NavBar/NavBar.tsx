@@ -54,7 +54,7 @@ export default function NavBar() {
           href="/"
           className="text-sm font-semibold leading-6 text-gray-900"
         >
-          نبذة{" "}
+          نبذة تعريفية
         </Link>
         <Link
           href="/home"
