@@ -3,7 +3,11 @@ import defaultAPI from "@/app/axiosIstance";
 import { ACCESS_TOKEN } from "@/app/constants/Constants";
 import Link from "next/link";
 import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
+
 export default function NavBar() {
+  const router = useRouter();
   return (
     <nav
       className="flex items-center bg-white justify-between p-6 lg:px-8"
@@ -85,10 +89,11 @@ export default function NavBar() {
           onClick={() => {
             defaultAPI.post("auth/logout").then(() => {
               Cookies.remove(ACCESS_TOKEN);
-              window.location.href = "/auth/login";
+              router.push("/auth/login");
             });
           }}
-          className="text-sm font-semibold leading-6 text-gray-900"
+          style={{ borderRadius: ".5rem" }}
+          className="text-sm p-2 bg-blue-600 font-semibold leading-6 text-white"
         >
           تسجيل خروج
         </button>
