@@ -11,7 +11,7 @@ export default function NavBar() {
     >
       <div className="flex lg:flex-1">
         <Link
-          href="home"
+          href="/"
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -51,7 +51,7 @@ export default function NavBar() {
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
         <Link
-          href="/"
+          href="/home"
           className="text-sm font-semibold leading-6 text-gray-900"
         >
           الإستراحات
