@@ -42,7 +42,7 @@ const Login = () => {
               htmlFor="email"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
-              Email address
+              الحساب{" "}
             </label>
             <div className="mt-2">
               <input
@@ -63,7 +63,7 @@ const Login = () => {
                 htmlFor="password"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Password
+                كلمة المرور
               </label>
             </div>
             <div className="mt-2">
@@ -84,7 +84,7 @@ const Login = () => {
               type="submit"
               className="flex w-full my-4 mx-auto justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Sign in
+              تسجيل دخول
             </button>
           </div>
         </div>
