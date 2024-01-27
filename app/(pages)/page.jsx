@@ -4,12 +4,41 @@ export default function About() {
       <h2 class="m-8 text-center text-4xl font-semibold text-gray-800 ">
         نبذة تعريفية
       </h2>
-      <h2 class="m-8 text-center text-4xl font-semibold text-gray-800 ">
-        جنوب السعودية هو وجهة سياحية رائعة تتميز بتنوع طبيعي وثقافي فريد. تضم
-        هذه المنطقة العديد من المعالم السياحية الشهيرة والمناظر الطبيعية الخلابة
-        التي تجذب السياح من جميع أنحاء العالم. إليك نبذة عن السياحة في جنوب
-        السعودية
-      </h2>
+      <article class="m-8 text-center text-4xl font-semibold text-gray-800 ">
+        عسير: منطقة عسير تقع في جنوب غرب السعودية وتعتبر وجهة سياحية شهيرة بسبب
+        جمال طبيعتها الخلابة وتضاريسها المتنوعة. تتميز بجبالها الشاهقة ووديانها
+        الخضراء وشلالاتها الجميلة. تعتبر مدينة أبها العاصمة الإدارية للمنطقة
+        وتضم مجموعة من المعالم السياحية مثل قلعة أبها القديمة وحديقة الملك خالد
+        وحديقة الربوة. يُمكنك أيضًا زيارة قرية رجال ألمع التقليدية والتعرف على
+        ثقافة وتراث المنطقة.
+        <br />
+        <br />
+        بيشة: منطقة بيشة تقع جنوب غرب المملكة العربية السعودية وتعتبر وجهة
+        سياحية رائعة لمحبي الطبيعة والمغامرة. تتميز بتضاريسها المتنوعة التي تشمل
+        جبال ووديان ومناظر طبيعية خلابة. يمكنك استكشاف جبل النار وجبل أبو خشبة
+        والتمتع بالمشي لمسافات طويلة ورؤية المناظر الطبيعية الخلابة. تعتبر قرية
+        الحبلة المجاورة مكانًا شهيرًا للاستجمام والتمتع بالمناظر الطبيعية
+        الساحرة.
+        <br />
+        <br />
+        النماص: النماص هي مدينة تقع في جنوب غرب السعودية وتتميز بموقعها الجغرافي
+        الفريد في جبال عسير. تعتبر وجهة سياحية رائعة لمحبي الطبيعة والمناظر
+        الطبيعية الخلابة. يمكنك التجول في مدينة النماص واستكشاف أسواقها
+        التقليدية والتعرف على الثقافة المحلية. يمكنك أيضًا زيارة جبل السودة
+        الشاهق والتمتع برحلة المشي والمناظر الخلابة للوديان والجبال.
+        <br />
+        <br />
+        سبت العلاية: سبت العلاية هي قرية تاريخية تقع في منطقة عسير في جنوب غرب
+        السعودية. تشتهر بأجوائها الباردة وجوها الجبلي المنعش. تتميز بالمناظر
+        الطبيعية الخلابة والمزارع الخضراء والوديان الجميلة. يُمكنك استكشاف
+        القرية ومشاهدة المباني التقليدية والتعرف على ثقافة السكان المحليين. يُعد
+        قمة رجل الهوى في جبال سبت العلاية مكانًا رائعًا لمشاهدة غروب الشمس
+        الخلاب والاستمتاع بالمناظر الطبيعية الساحرص على التحقق من أحدث المعلومات
+        والتوجيهات السياحية قبل السفر إلى هذه المناطق، حيث قد تكون هناك تغييرات
+        في الوضع السياحي أو القيود المرتبطة بالسفر.
+        <br />
+        <br />
+      </article>
       <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
@@ -39,20 +68,23 @@ export default function About() {
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
             <img
-              src="/image2.jpg"
+              src="https://i0.wp.com/news.travelerpedia.net/wp-content/uploads/2023/01/image-5.png?w=640&ssl=1"
               alt=""
               class="relative z-40 object-cover w-full h-96 rounded-3xl"
             />
           </div>
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
             <h2 class="mb-4 text-4xl font-semibold text-blue-500 dark:text-gray-300">
-              منطقة نجران
+              الجبل الأخضر{" "}
             </h2>
             <p class="mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-              تقع في جنوب غرب المملكة وتشتهر بجمال الصحراء والمواقع التاريخية.
-              يمكنك زيارة مدينة نجران واستكشاف القلاع والأسوار التاريخية ومتحف
-              نجران الإقليمي. كما يمكنك قضاء وقت ممتع في رحلات السفاري في
-              الصحراء والتمتع بالمناظر الطبيعية الخلابة.
+              يُعرف الجبل الأخضر بهذا الاسم بسبب الأضواء الخضراء والمساحات
+              الخضراء التي تحيط به، ويعد وجهة رائعة للزيار مع ما يوفره من مناخ
+              لطيف على مدار العام، ومرافق وفرص ترفيهية مميزة، حيث يمكن للسياح
+              القيام برحلة إلى قمة الجبل أو ركوب التلفريك إلى المنتزه الجبلي
+              والاستمتاع بالمناظر الخلابة للوادي، أخذا في الاعتبار أن ركوب
+              التلفريك أفضل بكثير في الليل عندما تكون المدينة بأكملها مضاءة
+              وتوفر مشهدًا لا يُنسى.
             </p>
           </div>
         </div>
@@ -62,18 +94,19 @@ export default function About() {
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
             <h2 class="mb-4 text-4xl font-semibold text-blue-500 ">
-              منطقة جازان{" "}
+              ممشى الضباب{" "}
             </h2>
             <p class="mb-10 text-bold leading-7 text-gray-500 ">
-              تقع على ساحل البحر الأحمر وتتميز بشواطئها الجميلة والجزر
-              الاستوائية. يمكنك زيارة جزيرة فرسان والاستمتاع بالغوص والغطس في
-              المياه الزرقاء الصافية. كما يمكنك زيارة مدينة جازان والتجول في
-              الأسواق واستكشاف المناطق الساحلية الجميلة.
+              يعد ممشى الضباب أحد أروع عجائب المملكة العربية السعودية الطبيعية
+              وواحد من الأماكن الشعبية التي يجب زيارتها في منطقة عسير، حيث يمنح
+              السياح إحساسًا بالتجول عبر السحب والضباب، مع إطلالة الكورنيش على
+              جبال تهامة الرائعة وهو بارد وضبابي طوال العام، مما يوفر للسائحين
+              تجربة لا تُنسى.
             </p>
           </div>
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
             <img
-              src="/image3.jpg"
+              src="https://i0.wp.com/news.travelerpedia.net/wp-content/uploads/2023/01/image-6.png?w=900&ssl=1"
               alt=""
               class="relative z-40 object-cover w-full h-96 rounded-3xl"
             />
@@ -85,47 +118,42 @@ export default function About() {
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
             <img
-              src="/image4.jpg"
+              src="https://i0.wp.com/news.travelerpedia.net/wp-content/uploads/2023/01/image-7.png?w=838&ssl=1"
               alt=""
               class="relative z-40 object-cover w-full h-96 rounded-3xl"
             />
           </div>
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
             <h2 class="mb-4 text-4xl font-semibold text-blue-500 dark:text-gray-300">
-              منطقة عرعر
+              قرية رجال ألمع
             </h2>
             <p class="mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-              تقع في شمال غرب المملكة وتعتبر بوابة إلى الصحراء العربية. يمكنك
-              زيارة قلعة عرعر التاريخية ومتحف عرعر الإقليمي للاطلاع على التراث
-              الثقافي للمنطقة. كما يمكنك الاستمتاع بالتجول في الصحراء وقيادة
-              الدراجات الرباعية وركوب الجمال.
+              تم إعلان موقع رجال ألمع كموقع تراث عالمي لليونسكو، وهي أحد أهم
+              المواقع الثقافية والأثرية في المملكة العربية السعودية، حيث يبلغ
+              عمر القرية 900 عام وتضم 60 مبنى متعدد الطوابق مبنية من الطين
+              والحجارة والأخشاب، وتضم أيضًا متحفًا يُعرف باسم متحف التراث.
             </p>
           </div>
         </div>
       </div>
 
-      <h2 class="m-8 text-center text-4xl font-semibold text-gray-800 ">
-        أفضل الأوقات لزيارة جنوب السعودية تعتمد على تفضيلاتك الشخصية والأنشطة
-        التي ترغب في القيام بها. ومع ذلك، هناك بعض الأوقات التي يعتبرها الكثيرون
-        مواسم سياحية مثالية في جنوب السعودية. إليك بعض الأوقات الشهيرة{" "}
-      </h2>
-
       <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
             <h2 class="mb-4 text-4xl font-semibold text-blue-500 ">
-              فصل الشتاء (نوفمبر إلى فبراير){" "}
+              قرية الحبالة{" "}
             </h2>
             <p class="mb-10 text-bold leading-7 text-gray-500 ">
-              يعتبر فصل الشتاء في جنوب السعودية مثاليًا للزيارة، حيث تكون درجات
-              الحرارة معتدلة في النهار وتكون باردة في الليالي. هذا يتيح لك
-              الاستمتاع بالأنشطة الخارجية مثل التجوال في الجبال والاستمتاع
-              بالمشاهد الطبيعية الخلابة.
+              تُعرف قرية الحبالة أيضًا باسم قرية حبالة المعلقة لأنها تقع على
+              حافة منحدر مرتفع، ولم يكن الوصول إلى هذه البلدة القديمة ممكنا إلا
+              عن طريق الحبال، والآن يمكن للسياح قضاء بعض الوقت في هذه القرية
+              المهجورة للتعرف على ماضي المملكة العربية السعودية، كما يمكنهم ركوب
+              التلفريك للاستمتاع بالمناظر الخلابة للجبال والصحراء.
             </p>
           </div>
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
             <img
-              src="/download1.jpeg"
+              src="https://i0.wp.com/news.travelerpedia.net/wp-content/uploads/2023/01/%D9%82%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D8%A8%D8%A7%D9%84%D8%A9.jpg?w=1000&ssl=1"
               alt=""
               class="relative z-40 object-cover w-full h-96 rounded-3xl"
             />
@@ -187,7 +215,7 @@ export default function About() {
         لضمان تجربة سياحية سلسة وممتعة
       </h2>
 
-      <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+      {/* <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
             <img
@@ -208,9 +236,9 @@ export default function About() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+      {/* <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
             <h2 class="mb-4 text-4xl font-semibold text-blue-500 ">
@@ -230,9 +258,9 @@ export default function About() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+      {/* <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
             <img
@@ -254,9 +282,9 @@ export default function About() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+      {/* <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div class="flex flex-wrap ">
           <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
             <h2 class="mb-4 text-4xl font-semibold text-blue-500 ">
@@ -277,7 +305,7 @@ export default function About() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <h2 class="m-8 text-center text-4xl font-semibold text-gray-800 ">
         هذه مجرد بعض الأماكن السياحية المشهورة في جنوب السعودية، وهناك المزيد من

@@ -36,7 +36,6 @@ const RestDetails = () => {
         : currentImageIndex
     );
   };
-  console.log(currentImageIndex, "currentImageIndex");
   return (
     <section className="py-10 font-poppins ">
       <div className="max-w-6xl px-4 mx-auto">
@@ -45,7 +44,7 @@ const RestDetails = () => {
             <div className="sticky top-0 overflow-hidden ">
               <div className="relative mb-6 lg:mb-10 lg:h-96">
                 <a
-                  className="absolute left-0 transform lg:mr-8 top-1/2 translate-1/2"
+                  className="absolute left-0 hover:cursor-pointer transform lg:mr-8 top-1/2 translate-1/2"
                   // href="#"
                   onClick={handlePrevImage}
                 >
@@ -64,12 +63,12 @@ const RestDetails = () => {
                   </svg>
                 </a>
                 <img
-                  className="object-contain w-full lg:h-full"
+                  className="object-contain w-[500px] h-[400px] w-full lg:h-full"
                   src={item?.images[currentImageIndex]}
                   alt=""
                 />
                 <a
-                  className="absolute right-0 transform lg:ml-8 top-1/2 translate-1/2"
+                  className="absolute right-0 hover:cursor-pointer transform lg:ml-8 top-1/2 translate-1/2"
                   // href="#"
                   onClick={handleNextImage}
                 >
@@ -95,6 +94,7 @@ const RestDetails = () => {
                     href="#"
                   >
                     <img
+                      onClick={() => setCurrentImageIndex(1)}
                       className="object-contain w-full lg:h-28"
                       src={item?.images[1]}
                       alt=""
@@ -107,6 +107,7 @@ const RestDetails = () => {
                     href="#"
                   >
                     <img
+                      onClick={() => setCurrentImageIndex(2)}
                       className="object-contain w-full lg:h-28"
                       src={item?.images[2]}
                       alt=""
@@ -119,6 +120,7 @@ const RestDetails = () => {
                     href="#"
                   >
                     <img
+                      onClick={() => setCurrentImageIndex(0)}
                       className="object-contain w-full lg:h-28"
                       src={item?.images[0]}
                       alt=""
@@ -131,16 +133,21 @@ const RestDetails = () => {
           <div className="w-full px-4 md:w-1/2">
             <div className="lg:pl-20">
               <div className="mb-6 ">
-                <h2 className="max-w-xl mt-6 mb-6 text-xl font-semibold leading-loose tracking-wide text-gray-900 md:text-2xl dark:text-gray-900">
+                <h2
+                  dir="rtl"
+                  className="max-w-xl mt-6 mb-6 text-xl font-semibold leading-loose tracking-wide text-gray-900 md:text-2xl dark:text-gray-900"
+                >
                   <span style={{ fontWeight: "bold", fontsize: "30px" }}>
                     {item?.name}
                   </span>
-                  <hr />
-                  {item?.description}
+                  <hr style={{ margin: "1rem" }} />
+                  <span style={{ fontWeight: "lighter", fontsize: "20px" }}>
+                    {item?.description}
+                  </span>
                 </h2>
                 <div className="flex flex-wrap items-center mb-6"></div>
                 <p className="inline-block text-2xl font-semibold text-gray-700 dark:text-gray-400 ">
-                  <span>{item?.price}$</span>
+                  <span>{item?.price}ريال</span>
                 </p>
               </div>
 

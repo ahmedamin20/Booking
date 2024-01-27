@@ -69,7 +69,7 @@ const OrdersDetails = () => {
                     </p>
 
                     <p className="text-base xl:text-lg font-semibold leading-6 text-green-600">
-                      {item.price}$
+                      {item.price}ريال
                     </p>
                   </div>
                 </div>
