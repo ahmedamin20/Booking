@@ -2,6 +2,9 @@ export default function About() {
   return (
     <section class="flex items-center flex-col bg-stone-100  font-poppins dark:bg-gray-800 ">
       <h2 class="m-8 text-center text-4xl font-semibold text-gray-800 ">
+        نبذة تعريفية
+      </h2>
+      <h2 class="m-8 text-center text-4xl font-semibold text-gray-800 ">
         جنوب السعودية هو وجهة سياحية رائعة تتميز بتنوع طبيعي وثقافي فريد. تضم
         هذه المنطقة العديد من المعالم السياحية الشهيرة والمناظر الطبيعية الخلابة
         التي تجذب السياح من جميع أنحاء العالم. إليك نبذة عن السياحة في جنوب

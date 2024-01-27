@@ -19,7 +19,7 @@ export default function NavBar() {
           }}
           className="-m-1.5 p-1.5"
         >
-          <h1 className="m-2 text-3xl font-bold">صيف الجنوب</h1>
+          <h1 className="m-2 text-3xl text-black font-bold">صيف الجنوب</h1>
           <img
             className="h-10 w-auto"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
